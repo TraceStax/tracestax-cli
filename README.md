@@ -1,6 +1,6 @@
 # @tracestax/cli
 
-Command-line interface for TraceStax — inspect workers, stream run events, manage alerts, and wrap shell scripts with zero-code instrumentation.
+Command-line interface for TraceStax - inspect workers, stream run events, manage alerts, and wrap shell scripts with zero-code instrumentation.
 
 ## Installation
 
@@ -10,8 +10,8 @@ npm install -g @tracestax/cli
 
 This installs two binaries:
 
-- `tracestax` — interactive CLI for inspecting your workspace
-- `tracestax-run` — process wrapper for instrumenting any shell command
+- `tracestax` - interactive CLI for inspecting your workspace
+- `tracestax-run` - process wrapper for instrumenting any shell command
 
 ## Authentication
 
@@ -91,7 +91,7 @@ $ tracestax tail proj_xyz
 Press `Ctrl+C` to stop.
 
 Options:
-- `--interval <seconds>` — poll interval (default: 3)
+- `--interval <seconds>` - poll interval (default: 3)
 
 ### `tracestax retry <runId>`
 
@@ -142,9 +142,9 @@ tracestax dev --compose-file docker-compose.app.yml --profile sim
 
 ---
 
-## `tracestax-run` — Zero-code process wrapper
+## `tracestax-run` - Zero-code process wrapper
 
-Wrap any shell command to send `started` / `succeeded` / `failed` events to TraceStax — no code changes required.
+Wrap any shell command to send `started` / `succeeded` / `failed` events to TraceStax - no code changes required.
 
 ```bash
 tracestax-run \
@@ -163,7 +163,7 @@ Options:
 | `--task-name` | `TRACESTAX_TASK_NAME` | Task name shown in dashboard |
 | `--queue` | `TRACESTAX_QUEUE` | Queue label (default: `default`) |
 
-The wrapped process's exit code is preserved — `tracestax-run` never swallows failures.
+The wrapped process's exit code is preserved - `tracestax-run` never swallows failures.
 
 ---
 
