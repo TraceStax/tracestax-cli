@@ -1,0 +1,2 @@
+# tracestax-cli
+TraceStax CLI
